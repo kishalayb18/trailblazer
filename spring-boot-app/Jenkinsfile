@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('clone') {
             steps {
-                sh 'echo git clone'
+                echo 'code cloning completed'
             }
         }
     }
