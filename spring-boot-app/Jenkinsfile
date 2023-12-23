@@ -8,6 +8,7 @@ pipeline {
   stages {
     stage('gitClone') {
       steps {
+        echo 'code cloning completed'
         // echo 'cloning successful'
         //git branch: 'main', url: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero.git'
       }
@@ -15,7 +16,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        echo 'building ...'
+        // echo 'building ...'
         sh 'ls -ltr'
         // build the project and create a JAR file
         sh 'cd spring-boot-app && mvn clean package'
