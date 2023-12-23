@@ -6,7 +6,7 @@ pipeline {
     }
   }
   stages {
-    stage('Clone') {
+    stage('gitClone') {
       steps {
         sh 'cloning successful'
         //git branch: 'main', url: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero.git'
